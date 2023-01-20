@@ -20,9 +20,9 @@ public class Album {
     public List<Photo> coverPhotos;
     private String dateCreated;
     List<Photo> photoListPlaceholder = new ArrayList<>(List.of(
-            new Photo("1",id,"www.picsum.photos/200/300", "Tex Cauffield","1976",null),
-            new Photo("2",id,"www.picsum.photos/400/400", "Rex Cauffield","2004",null),
-            new Photo("3",id,"www.picsum.photos/300/300", "Lex Luthor","1933",null)
+            new Photo("1",id,"http://www.picsum.photos/200/300", "Tex Cauffield","1976",null),
+            new Photo("2",id,"http://www.picsum.photos/400/400", "Rex Cauffield","2004",null),
+            new Photo("3",id,"http://www.picsum.photos/300/300", "Lex Luthor","1933",null)
     ));
     public Album(String id, String name, String createdBy, List<Photo> coverPhotos, String dateCreated, String albumPhoto) {
         this.id = id;

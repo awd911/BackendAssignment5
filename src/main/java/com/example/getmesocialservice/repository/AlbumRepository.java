@@ -20,9 +20,9 @@ public class AlbumRepository {
 //C/O https://placeholder.com/#How_To_Use_Our_Placeholders
 
     List<Album> albumList = new ArrayList<>(List.of(
-            new Album("1","Disco Tex", "Tex Cauffield", null,"1976","www.picsum.photos/500/500"),
-            new Album("2","Disco Rex 2", "Rex Cauffield", null,"2004","www.picsum.photos/500/500"),
-            new Album("3","Disco Lex 3", "Lex Luthor", null,"1933","www.picsum.photos/500/500")
+            new Album("1","Disco Tex", "Tex Cauffield", null,"1976","http://www.picsum.photos/500/500"),
+            new Album("2","Disco Rex 2", "Rex Cauffield", null,"2004","http://www.picsum.photos/500/500"),
+            new Album("3","Disco Lex 3", "Lex Luthor", null,"1933","http://www.picsum.photos/500/500")
     ));
 
     public Album getAlbum(){
