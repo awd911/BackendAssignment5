@@ -42,7 +42,7 @@ public class PhotoResource {
     }
 
     @PostMapping("/photo")
-    public Photo savePhoto(@RequestBody @Valid Photo photo, @RequestHeader(name = "idToken") String idToken) throws exception, FirebaseAuthException, IOException {
+    public List<Photo> savePhoto(@RequestBody @Valid Photo photo, @RequestHeader(name = "idToken") String idToken) throws exception, FirebaseAuthException, IOException {
         firebaseUser firebaseUser = firebaseService.authenticate(idToken);
 
         if (firebaseUser != null) {

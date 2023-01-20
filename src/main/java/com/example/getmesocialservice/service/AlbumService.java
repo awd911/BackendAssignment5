@@ -35,6 +35,8 @@ public class AlbumService {
        return albumRepository.deleteAlbum(id);
     }
 
+    public Album addPhotoToAlbum(String id,Photo photo){ return albumRepository.addPhotoToAlbum(id,photo);}
+
     public List<Photo> getPhotosInAlbum(String id) { return albumRepository.getPhotosInAlbum(id);}
 
     public Album setAlbumPhoto(String albumPhoto, String albumId){ return albumRepository.setAlbumPhoto(albumPhoto,albumId); }

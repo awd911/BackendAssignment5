@@ -53,6 +53,16 @@ public class AlbumRepository {
         }
         return null;
     }
+    public Album addPhotoToAlbum(String id, Photo photo){
+        for(Album album: albumList){
+            if(album.getid().equals(id)){
+                album.coverPhotos.add(photo);
+                return album;
+            }
+        }
+        return null;
+    }
+
     public List<Photo> getPhotosInAlbum(String id) {
         for(Album album: albumList){
             if(album.getid().equals(id)){

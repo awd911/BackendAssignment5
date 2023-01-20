@@ -25,10 +25,10 @@ public class PhotoRepository  {
         return photo;
     }
 
-    public Photo savePhoto(Photo photo) {
+    public List<Photo> savePhoto(Photo photo) {
 //        photo.setId(photoList.size() +1);
         photoList.add(photo);
-        return photo;
+        return photoList;
     }
 
     public List<Photo> getAllPhotos() {

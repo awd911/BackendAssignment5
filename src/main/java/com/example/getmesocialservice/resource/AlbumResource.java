@@ -46,6 +46,9 @@ public class AlbumResource {
         return albumService.getAlbumById(id);
     }
 
+    @GetMapping("/album/{id}/uploadPhoto")
+    public Album addPhotoToAlbum(@PathVariable("id") String id, Photo photo){return albumService.addPhotoToAlbum(id,photo);}
+
     @PostMapping("/album")
     public Album saveAlbum(@RequestBody @Valid Album album, @RequestHeader(name ="idToken") String idToken ) throws exception, FirebaseAuthException, IOException
     {
