@@ -15,9 +15,9 @@ public class PhotoRepository  {
             new Comment("3","1","Third Message", "Baby Strong","Jan 29 2022")
     ));
     List<Photo> photoList = new ArrayList<>(List.of(
-            new Photo("1","1","www.picsum.photos/200/300", "Tex Cauffield","1976",commentListPlaceholder),
-            new Photo("2","1","www.picsum.photos/400/400", "Rex Cauffield","2004",commentListPlaceholder),
-            new Photo("3","1","www.picsum.photos/300/300", "Lex Luthor","1933",commentListPlaceholder)
+            new Photo("1","1","http://54.164.130.170:8080/api/files/view?key=FrontendA7Problem.jpg", "Tex Cauffield","1976",commentListPlaceholder),
+            new Photo("2","1","http://54.164.130.170:8080/api/files/view?key=AssignmentProblem.png", "Rex Cauffield","2004",commentListPlaceholder),
+            new Photo("3","1","http://54.164.130.170:8080/api/files/view?key=neatSpotify.png", "Lex Luthor","1933",commentListPlaceholder)
     ));
 
     public Photo getPhoto(){
