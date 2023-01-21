@@ -17,7 +17,7 @@ public class PhotoRepository  {
     List<Photo> photoList = new ArrayList<>(List.of(
             new Photo("1","1","http://54.164.130.170:8080/api/files/view?key=FrontendA7Problem.jpg", "Tex Cauffield","1976",commentListPlaceholder),
             new Photo("2","1","http://54.164.130.170:8080/api/files/view?key=AssignmentProblem.png", "Rex Cauffield","2004",commentListPlaceholder),
-            new Photo("3","1","http://54.164.130.170:8080/api/files/view?key=neatSpotify.png", "Lex Luthor","1933",commentListPlaceholder)
+            new Photo("3","1","http://54.164.130.170:8080/api/files/view?key=neatspotify.png", "Lex Luthor","1933",commentListPlaceholder)
     ));
 
     public Photo getPhoto(){
